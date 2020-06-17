@@ -20,4 +20,4 @@ const calculatorSchema = new Schema({
     }
 }, {timestamps: true});
 
-module.exports = mongoose.model("Interest", calculatorSchema);interest
+module.exports = mongoose.model("Interest", calculatorSchema);
