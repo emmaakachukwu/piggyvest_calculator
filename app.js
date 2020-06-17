@@ -15,7 +15,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-//const routesoutes=require('./routes/')
+const calcRoutes=require('./routes/calculatorRoute')
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,7 +23,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 
 
 
-//app.use(userRoutes)
+app.use(calcRoutes)
 
 
 
