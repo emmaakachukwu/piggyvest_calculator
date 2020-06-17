@@ -9,20 +9,23 @@
     <h3>PiggyVest Interest Calculator</h3>
     <br>
     <!-- <form> -->
-        <input type="number" placeholder="amount" id="amount">
+        <input type="number" placeholder="amount" id="amount" name="amount">
         <br>
-        <select id="investment">
+        <select id="investment" name="investment">
             <option selected disabled value="">Choose investment</option>
             <option value="Investment 1">Investment 1"</option>
             <option value="investment 2">Investment 2"</option>
             <option value="investment 3">Investment 3</option>
         </select>
         <br>
-        <input type="number" placeholder="rate" id="rate">
+        <input type="number" placeholder="rate (%)" id="rate" name="rate">
         <br>
-        <input type="number" placeholder="number of days" id="time">
+        <input type="number" placeholder="number of months" id="period" name="period">
         <br>
         <button id="btn">Calculate Interest</button>
+        <br>
+        <p>Interest: <span id="interest">0</span></p>
+        
     <!-- </form> -->
 
     <script src="/static/script.js"></script>
