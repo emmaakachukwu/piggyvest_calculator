@@ -1,17 +1,22 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const Joi = require("joi");
+const mongoose = require("mongoose");
 
-const calculatorSchema = new Schema({
+
+const calculatorSchema = new mongoose.Schema({
     amount: {
-        type: String
+        type: Number,
+        required: true
     },
 
     investment: {
-        type: String
+        type: Number,
+        required: true,
     },
 
     interest: {
-        type: String
+        type: Number,
+        required: true
     },
 
     date: {
@@ -20,4 +25,28 @@ const calculatorSchema = new Schema({
     }
 }, {timestamps: true});
 
+
+const Calculator = mongoose.model("Calculator", calculatorSchema);
+
+function validateCalculator(calculator) {
+    const schema = {
+        amount: Joi.number().required(),
+        investment: Joi.number().required(),
+        interest: Joi.number().required()
+    };
+    return Joi.validate(calculator, schema);
+}
+
+
+exports.Calculator = Calculator;
+exports.validate = validateCalculator;
+
+
+/*
 module.exports = mongoose.model("Interest", calculatorSchema);
+
+
+const Schema = mongoose.Schema;
+const calculatorSchema = new Schema({
+
+*/
