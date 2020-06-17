@@ -14,7 +14,6 @@ async function onSubmit(){
     } else {
         let interest = (amount * rate * period) / 100;
         interestCalc.value = interest;
-        return;
         const postInterest = await fetch( '/', { //set the url to post the inputs
             method: 'POST',
             headers: {
