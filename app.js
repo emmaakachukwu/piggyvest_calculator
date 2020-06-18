@@ -4,13 +4,13 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const favicon = require('express-favicon');
 
 
 const MONGODB_URI = process.env.DB_CONN;
 
 const app = express();
-
-
+app.use(favicon('./favicon.png'));
 
 app.set("view engine", "ejs");
 app.set("views", "views");
