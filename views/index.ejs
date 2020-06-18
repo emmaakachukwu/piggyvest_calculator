@@ -47,18 +47,12 @@
                 <h2>Transactions</h2>
               </div>
               <div class="inner-right-bottom-box">
-<<<<<<< HEAD:views/index.ejs
                 <h3>Interest<span id="totalinterestrate">0</span></h3>
                 <p id="interest"></p>
               </div>
               <div class="inner-right-bottom-box">
                 <h3>Total<span id="totalinterest">0</span></h3>
                 <p id="interest"></p>
-=======
-                <h3>Net Worth</h3>
-                <br>
-                <p>&#8358;900, 000</p>
->>>>>>> Frontend:index.html
               </div>
             </div>
           </div>
@@ -71,93 +65,47 @@
               an investment goal width particular inputs, click the 'calculate'
               tab.
             </p>
-<<<<<<< HEAD:views/index.ejs
-           <form id="myform" name="myform"> 
-              <div class="input-field">
-                <label for="saving amount">Saving Amount</label>
-                <input
-                  type="number"
-                  class="savingAmount-input"
-                  name="amount"
-                  placeholder=""
-                  
-                  id="amount"
-                  onkeyup="calculateTotal()"
-                />
-              </div>
-              <div class="input-field">
-                <label for="period">Period (month(s))</label>
-                <input
-                  type="number"
-                  class="period-input"
-                  name="period"
-                  placeholder=""
-                  
-                  id="period"
-                  onkeyup="calculateTotal()"
-                />
-              </div>
-              <div class="input-field">
-                <label for="rate">Rate (%)</label>
-                <input
-                  type="number"
-                  class="interest-input"
-                  name="rate"
-                  placeholder=""
-                  value="10"
-                  id="rate"
-                  onkeyup="calculateTotal()"
-                  readonly
-                />
-              </div>
-              <div class="input-field">
-                <input type="button" value="calculate" id="btn" />
-              </div>
-            </form>
-  
-=======
           
             <div class="container">
-              <form action="action_page.php">
+              <form id="myform" name="myform">
                 <div class="row">
                   <div class="col-25">
                     <label for="fname">Saving Amount</label>
                   </div>
                   <div class="col-75">
-                    <input type="number" id="fname" name="firstname" placeholder="Saving Amount">
+                    <input type="number" id="fname" name="firstname" placeholder="Saving Amount" onkeyup="calculateTotal()">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-25">
-                    <label for="lname">Period</label>
+                    <label for="lname">Period (month(s))</label>
                   </div>
                   <div class="col-75">
-                    <input type="number" id="lname" name="lastname" placeholder="Period">
+                    <input type="number" id="lname" name="lastname" placeholder="Period" onkeyup="calculateTotal()">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-25">
-                    <label for="lname">Rate</label>
+                    <label for="lname">Rate(%)</label>
                   </div>
                   <div class="col-75">
-                    <input type="number" id="rate" name="lastname" placeholder="Rate = 7.3%" disabled>
+                    <input type="number" id="rate" name="lastname" value="10" disabled onkeyup="calculateTotal()">
                   </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-25">
                     <label for="lname">Interest</label>
                   </div>
                   <div class="col-75">
                     <input type="number" id="interest" name="lastname" placeholder="Interest = " disabled>
                   </div>
-                </div>
+                </div> -->
                 <br>
                 <div class="row">
-                  <input type="button" value="Calculate">
+                  <input type="button" value="Calculate" id="btn">
                 </div>
               </form>
             </div>
->>>>>>> Frontend:index.html
           </div>
         </div>
       </div>
