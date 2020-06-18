@@ -288,7 +288,7 @@ label {
   left: 58px;
 }
 
-.input-field input[type="submit"] {
+.input-field input[type="button"] {
   background-color: #083e9e;
   color: #ffffff;
   text-transform: uppercase;
@@ -424,7 +424,7 @@ label {
     width: 70%;
     margin-left: -50px;
   }
-  .input-field input[type="submit"] {
+  .input-field input[type="button"] {
     margin-left: 5px;
   }
   .inner-footer {
