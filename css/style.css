@@ -6,10 +6,10 @@ body {
   height: auto;
 }
 
-html,
+html, 
 * {
   box-sizing: border-box;
-  font-family: Open Sans;
+  font-family: Open sans-serif;
 }
 main {
   max-width: 1440px;
@@ -36,8 +36,6 @@ a {
   top: -5px;
 }
 
-.logo img {
-}
 .inner-header-wrapper {
   width: 90%;
   height: 70px;
@@ -64,13 +62,14 @@ a {
 }
 .ul-links li a {
   color: #235dc3;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .logout-a {
   position: relative;
   left: 50px;
   color: #235dc3;
+  font-size: 16px;
 }
 /* .ul-links li:hover  */
 .active:before {
@@ -144,7 +143,15 @@ a {
   border-right: none;
 }
 
-.Withdraw-btn,
+.body-image img{
+  width: 550px;
+  height: 550px;
+}
+
+
+
+
+/* .Withdraw-btn,
 .deposit-btn {
   width: 350px;
   height: 40px;
@@ -180,7 +187,7 @@ a {
   border-radius: 50%;
   margin-top: 5px;
 }
-
+*/
 .inner-right-top-box {
   border: 1px solid #4a5568;
   max-width: 100%;
@@ -201,6 +208,7 @@ a {
 
 .inner-right-bottom-box {
   text-align: center;
+  padding-top: 15px;
 }
 
 .inner-right-bottom-box h3 {
@@ -210,98 +218,96 @@ a {
   color: #020f26;
 }
 
-.inner-right-bottom-box span {
-  position: relative;
-  left: 100px;
-  padding: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 5px;
-  background-color: #235dc3;
-  color: #ffffff;
-}
-
 .inner-right-bottom-box p {
-  font-size: 40px;
+  font-size: 28px;
   letter-spacing: 1;
   text-transform: uppercase;
   position: relative;
   top: -30px;
   color: #062863;
 }
-
+.right-main-body-content{
+  width: 50%;
+  padding: 1% 5% 5%;
+}
 .right-main-body-content h2 {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: sans-serif;
   letter-spacing: 1.5;
   color: #083e9e;
+  text-align: center;
 }
 
 .right-main-body-content p {
+  font-family: sans-serif;
   max-width: 500px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: #4a5568;
+  text-align: justify;
 }
 
-#form-box {
-  max-width: 450px;
-  padding: 15px;
-  text-align: center;
+/* Style inputs, select elements and textareas */
+input[type=number]{
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 2px solid #235dc3;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-.input-field {
-  margin-bottom: 20px;
-}
+/* Style the label to display next to the inputs */
 label {
-  font-size: 15px;
-  color: #4a5568;
-  float: left;
-}
-.input-field input {
-  padding: 5px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 250px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  text-align: center;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
-.input-field input::placeholder {
-  color: #020f26;
-}
-
-.savingAmount-input {
-  position: relative;
-  left: 30px;
-}
-
-.period-input {
-  position: relative;
-  left: 61px;
-}
-
-.interest-input {
-  position: relative;
-  left: 58px;
-}
-
-.input-field input[type="submit"] {
-  background-color: #083e9e;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 10px 10px 10px 0px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center;
-
-  margin-top: 20px;
+/* Style the submit button */
+input[type=button] {
+  background-color: #235dc3;
+  color: white;
+  padding: 12px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  padding: 0;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  
 }
 
 .footer {
@@ -320,8 +326,9 @@ label {
 }
 
 .footer-left-content {
-  width: 700px;
+  width: 500px;
   margin-left: 10px;
+  text-align: justify;
 }
 
 .footer-left-content img {
@@ -331,6 +338,7 @@ label {
 .footer-left-content p {
   font-size: 14px;
   color: #020f26;
+  letter-spacing: normal;
 }
 
 .footer-right-content {
@@ -363,92 +371,3 @@ label {
   margin: 5px;
   width: 25px;
 }
-/* mobile view */
-@media only screen and (max-device-width: 480px) {
-  main {
-    max-width: 360px;
-    overflow-x: hidden;
-    border: 2px solid black;
-    margin: 0 auto;
-  }
-  .header-wrapper {
-    width: 100%;
-    overflow-x: hidden;
-    height: auto;
-  }
-  .inner-header-wrapper .nav-bar {
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    overflow-y: hidden;
-    /* height: 100px; */
-  }
-  /* .header-wrapper ul {
-    display:;
-  } */
-  .inner-main-body-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  .inner-main-body-container .inner-left-top-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 140px;
-  }
-  .inner-main-body-container .Withdraw-btn,
-  .deposit-btn {
-    /* width: 20%; */
-    padding: 30px;
-  }
-  .right-main-body-content {
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  form {
-    align-items: center;
-    padding: 0;
-    text-align: center;
-  }
-  .input-field {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px 0 0 50px;
-  }
-  .input-field input {
-    width: 70%;
-    margin-left: -50px;
-  }
-  .input-field input[type="submit"] {
-    margin-left: 5px;
-  }
-  .inner-footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .footer-left-content {
-    width: 95%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .footer-right-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-  }
-  /* .savingAmount-input {
-    position: relative;
-    right: -30px;
-  } */
-}
-/* @media only screen and (max-width: 480px),
-  only screen and (max-device-width: 480px) {
-  
-} */
