@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn1 {
+  background: #083e9e;
+  color: #fff;
+  border: none;
+}
+body {
+  background: #e5e5e5;
+}
+main {
+  /* border: 2px solid red; */
+  max-width: 360px;
+  height: 640px;
+  margin: 0 auto;
+  /* padding: 10px; */
+  margin-top: 10px;
+  background: #fcfcfc;
+}
+header {
+  display: none;
+}
+.calc-section .left {
+  display: none;
+}
+footer {
+  display: none;
+}
+.right {
+  height: 550px;
+  padding: 15px;
+}
+.right #desktop {
+  display: none;
+}
+.right h1 {
+  width: 275px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #083e9e;
+  margin: 50px 0 0 0;
+}
+.right h2 {
+  width: 310px;
+  height: 56px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 19px;
+  color: #4a5568;
+  text-align: left;
+  margin-top: 10px;
+}
+form {
+  /* border: 2px solid blue; */
+  margin-top: 30px;
+  height: auto;
+}
+.tabs {
+  margin: 30px 0 30px 0;
+  padding: 5px;
+  display: flex;
+}
+.tabs > label {
+  height: 14px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #020f26;
+}
+.tabs > input {
+  background: #fcfcfc;
+  border: 0.5px solid #4a5568;
+}
+.tabs .border {
+  background: #fcfcfc;
+  border: 0.5px solid #4a5568;
+}
+.tabs .border input {
+  border: none;
+  margin-left: 20px;
+  width: 159px;
+  height: 26px;
+}
+.tabs #arrow {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+}
+.tabs #arrow img {
+  width: 13px;
+  height: 10px;
+  margin: 5px;
+}
+.tabs #money {
+  margin-left: 28px;
+  width: 185px;
+  height: 28px;
+}
+.tabs:nth-child(1) > label {
+  width: 114px;
+}
+.tabs:nth-child(2) input {
+  width: 230px;
+  height: 28px;
+  margin-left: 15px;
+}
+.tabs:nth-child(2) > label {
+  width: 74px;
+}
+.tabs:nth-child(3) > input {
+  width: 257px;
+  height: 28px;
+  margin-left: 28px;
+}
+.tabs:nth-child(3) > label {
+  width: 37px;
+}
+.tabs:nth-child(4) > input {
+  width: 179px;
+  height: 28px;
+  margin-left: 28px;
+}
+.tabs:nth-child(4) > label {
+  width: 114px;
+}
+form .btn {
+  width: 320px;
+  height: 36px;
+  background: #083e9e;
+  border-radius: 10px 10px 10px 0px;
+}
+.mob-tab {
+  /* border: 2px solid black; */
+  margin: 15px 1px 0 1px;
+  width: 358px;
+  height: 76px;
+  background: #fcfcfc;
+  box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+}
+.mob-tab .tab-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.mob-tab img {
+  color: #4a5568;
+  width: 20px;
+  margin: 10px;
+}
+.mob-tab span {
+  width: 34px;
+  height: 14px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4a5568;
+  margin-bottom: 5px;
+}

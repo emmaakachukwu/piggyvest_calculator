@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PIGGYVEST CALCULATOR</title>
   </head>
+  <link rel="stylesheet" href="style/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+    integrity="sha256-CfN2r6i/dqkUHVRqpBzO3w21SnIWalwGfj5ScBPVzmI="
+    crossorigin="anonymous"
+  />
   <body>
     <main>
       <!-- header section -->
@@ -40,32 +47,63 @@
           </div>
         </aside>
         <aside class="right">
-          <h2>Investment Calculator</h2>
-          <p>
+          <h1>Investment Calculator</h1>
+          <p id="desktop">
             The investment calculatior can be used to calculate a specific
             patrameter for an investment plan. The tabs represent the desired
             parameter to be found. For example, to calculate the return rate
             neede to reach an investment goal with particular input, click the
             'calculate' tab.
           </p>
+          <h2 id="mobile">
+            What’s your investment goal? You can determine how your money will
+            grow over time with our investment calculator
+          </h2>
           <div>
             <form action="">
               <div class="tabs">
-                <label for="amount">Saving Amount</label>
+                <label for="amount">Investment Amount</label>
+                <div class="border" id="money">
+                  <input type="text" id="amount" />
+                </div>
+              </div>
+              <div class="tabs">
+                <label for="period">Investment</label>
+                <div class="border" id="arrow">
+                  <input type="text" id="amount" />
+                  <img src="img/arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="tabs">
+                <label for="amount">Period</label>
                 <input type="text" id="amount" />
               </div>
               <div class="tabs">
-                <label for="period">Saving Amount</label>
+                <label for="amount">Interest per annum</label>
                 <input type="text" id="amount" />
               </div>
-              <div class="tabs">
-                <label for="amount">Saving Amount</label>
-                <input type="text" id="amount" />
-              </div>
-              <button class="btn btn1">CALCULATE</button>
+              <button class="btn btn1" type="submit">CALCULATE</button>
             </form>
           </div>
         </aside>
+        <div class="mob-tab">
+          <div class="home tab-btn">
+            <img src="img/house.png" alt="" />
+            <span>Home</span>
+          </div>
+          <div class="savings tab-btn">
+            <img src="img/house.png" alt="" />
+            <span>Savings</span>
+          </div>
+          <div class="invest tab-btn">
+            <img src="img/rocket.png" alt="" />
+            <span>Invest</span>
+          </div>
+          <div class="account tab-btn">
+            <img src="img/avatar.png" alt="" />
+            <span>Account</span>
+          </div>
+        </div>
       </section>
       <footer>
         <div class="log"></div>
