@@ -1,36 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PiggyVest Interest Calculator</title>
-</head>
-<body>
-    <h3>PiggyVest Interest Calculator</h3>
-    <br>
-        <input type="number" placeholder="amount" id="amount" name="amount">
-        <br>
-        <select id="investment" name="investment">
-            <option selected disabled value="">Choose investment</option>
-            <option value="Investment 1">Investment 1"</option>
-            <option value="investment 2">Investment 2"</option>
-            <option value="investment 3">Investment 3</option>
-        </select>
-        <br>
-        <input type="number" placeholder="rate (%)" id="rate" name="rate">
-        <br>
-        <input type="number" placeholder="number of months" id="period" name="period">
-        <br>
-        <button id="btn">Calculate Interest</button>
-        <br>
-        <p>Interest:</p>
-        <span id="interest">0</span>
-        
-
-    <script src="/static/script.js"></script>
-</body>
-</html> -->
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -80,7 +47,11 @@
                 <h2>Transactions</h2>
               </div>
               <div class="inner-right-bottom-box">
-                <h3>Interest<span>0%</span></h3>
+                <h3>Interest<span id="totalinterestrate">0</span></h3>
+                <p id="interest"></p>
+              </div>
+              <div class="inner-right-bottom-box">
+                <h3>Total<span id="totalinterest">0</span></h3>
                 <p id="interest"></p>
               </div>
             </div>
@@ -94,7 +65,7 @@
               an investment goal width particular inputs, click the 'calculate'
               tab.
             </p>
-            <!-- <form action="" id="form-box"> -->
+           <form id="myform" name="myform"> 
               <div class="input-field">
                 <label for="saving amount">Saving Amount</label>
                 <input
@@ -102,8 +73,9 @@
                   class="savingAmount-input"
                   name="amount"
                   placeholder=""
-                  value=""
+                  
                   id="amount"
+                  onkeyup="calculateTotal()"
                 />
               </div>
               <div class="input-field">
@@ -113,8 +85,9 @@
                   class="period-input"
                   name="period"
                   placeholder=""
-                  value=""
+                  
                   id="period"
+                  onkeyup="calculateTotal()"
                 />
               </div>
               <div class="input-field">
@@ -124,14 +97,17 @@
                   class="interest-input"
                   name="rate"
                   placeholder=""
-                  value=""
+                  value="10"
                   id="rate"
+                  onkeyup="calculateTotal()"
+                  readonly
                 />
               </div>
               <div class="input-field">
-                <input type="submit" value="calculate" id="btn" />
+                <input type="button" value="calculate" id="btn" />
               </div>
-            <!-- </form> -->
+            </form>
+  
           </div>
         </div>
       </div>
