@@ -1,7 +1,7 @@
-let amount = document.getElementById('amount').value;
-let investment = document.getElementById('investment').value;
-let rate = document.getElementById('rate').value;
-let period = document.getElementById('period').value;
+let amount = document.getElementById('amount');
+let investment = document.getElementById('investment');
+let rate = document.getElementById('rate');
+let period = document.getElementById('period');
 let interestCalc = document.getElementById('interest');
 let submit = document.getElementById('btn');
 
@@ -9,19 +9,20 @@ submit.addEventListener('click', onSubmit);
 
 async function onSubmit(){
     let error;
-    if ( !amount || !investment || !rate || !time ) {
+    if ( !amount.value || !investment.value || !rate.value || !period.value ) {
         error = "All fields are requitred";
     } else {
-        let interest = (amount * rate * period) / 100;
-        interestCalc.value = interest;
+        let interest = (parseInt(amount.value) * parseInt(rate.value) * parseInt(period.value)) / 100;
+        interestCalc.innerHTML = `<span>${interest}</span>`;
+        return;
         const postInterest = await fetch( '/', { //set the url to post the inputs
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                amount,
-                investment,
+                amount: amount.value,
+                investment: investment.value,
                 interest
             })
         })
