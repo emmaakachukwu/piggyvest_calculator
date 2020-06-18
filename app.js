@@ -10,7 +10,6 @@ const favicon = require('express-favicon');
 const MONGODB_URI = process.env.DB_CONN;
 
 const app = express();
-app.use(favicon('./favicon.png'));
 
 app.set("view engine", "ejs");
 app.set("views", "views");
@@ -20,7 +19,7 @@ const calcRoutes=require('./routes/calculatorRoute')
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/static', express.static(path.join(__dirname, 'public')))
-
+app.use(favicon('/static/favicon.png'));
 
 
 app.use(calcRoutes)
