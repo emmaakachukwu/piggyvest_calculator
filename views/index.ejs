@@ -3,18 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piggyvest Calculator</title>
-<<<<<<< HEAD:views/index.ejs
     <link rel="stylesheet" href="/static/css/style.css" />
     <link rel="stylesheet" href="/static/css/responsive-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans"
       rel="stylesheet"
     />
-=======
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive-style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans"/>
->>>>>>> Frontend:index.html
   </head> 
   <body>
     <main>
@@ -48,7 +42,7 @@
               </div>
               <div class="left-bottom-circle-btn"></div>
             </div> -->
-            <div class="inner-left-bottom-main-body-content">
+            <!-- <div class="inner-left-bottom-main-body-content">
               <div class="inner-right-top-box">
                 <h2>Transactions</h2>
               </div>
@@ -59,9 +53,9 @@
               <div class="inner-right-bottom-box">
                 <h3>Total:<span id="totalinterest">0</span></h3>
                 <p id="interest"></p>
-              </div>
+              </div> -->
             <div class="body-image">
-              <img src="img/body.svg" alt="invest">
+              <img src="/static/img/body.svg" alt="invest">
             </div>
           </div>
           <div class="right-main-body-content">
@@ -100,6 +94,16 @@
                   <div class="col-75">
                     <input type="number" id="rate" name="rate" value="10" disabled onkeyup="calculateTotal()">
                   </div>
+                </div>
+
+                <!-- C A L C U L A T I O N   R E S U L T S -->
+                <div class="inner-right-bottom-box">
+                  <h3>Interest:<span id="totalinterestrate">0</span></h3>
+                  <p id="interest"></p>
+                </div>
+                <div class="inner-right-bottom-box">
+                  <h3>Total:<span id="totalinterest">0</span></h3>
+                  <p id="interest"></p>
                 </div>
                 <!-- <div class="row">
                   <div class="col-25">
