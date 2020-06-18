@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html, *{
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-wrapper{
+    width: 100%;
+    margin: auto;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 5px 6px -6px black;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 5;
+}
+
+.logo{
+    position: relative;
+    top: -5px;
+}
+
+.logo img{
+}
+.inner-header-wrapper{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:8px;
+}
+
+.ul-links{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    position: relative;
+    left: -50px;
+}
+
+.ul-links li{
+    list-style: none;
+}
+.ul-links li a{
+    color: #235DC3;
+    font-size: 14px;
+}
+
+.logout-a{
+    position: relative;
+    left: 50px;
+    color: #235DC3;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #235DC3;
+    top: 26px;
+    width: 38px;
+}
+
+.main-body-container{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+.inner-main-body-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-main-body-content{
+    max-width: 100%;
+    height: 500px;
+    margin: 10px;
+
+}
+
+.right-main-body-content{
+    box-shadow: 0 0px 20px 3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.596);
+    padding: 20px;
+    padding-right: 40px;
+    width: 100%;
+    margin: 10px;
+}
+
+.left-main-body-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner-left-top-main-body-content{
+    max-width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px 3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.596);
+
+}
+
+.inner-left-bottom-main-body-content{
+    max-width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px 3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.596);
+
+}
+
+.inner-left-top-box{
+    border: 1px solid #4A5568;
+    max-width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.Withdraw-btn, .deposit-btn{
+    max-width: 180px;
+    height: 40px;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    margin: 5px;
+}
+
+.Withdraw-btn a, .deposit-btn a{
+    border: 1px solid #235DC3;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 14px;
+}
+
+.Withdraw-btn a{
+    background-color: #235DC3;;
+    color: ffffff;
+}
+
+.deposit-btn a{
+    color: #020F26;
+}
+
+.left-bottom-circle-btn{
+    border: 1px solid #4A5568;
+    margin: auto;
+    max-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.inner-right-top-box{
+    border: 1px solid #4A5568;
+    max-width: 100%;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    
+}
+
+.inner-right-top-box h2{
+    font-size: 18px;
+    letter-spacing: 1;
+    color: #020F26;;
+}
+
+.inner-right-bottom-box{
+    text-align: center;
+}
+
+.inner-right-bottom-box h3{
+    font-size: 16px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: #020F26;
+}
+
+.inner-right-bottom-box span{
+    position: relative;
+    left: 100px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    background-color: #235DC3;
+    color: #ffffff;
+}
+
+.inner-right-bottom-box p{
+    font-size: 40px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    position: relative;
+    top: -30px;
+    color: #062863;
+}
+
+.right-main-body-content h2{
+    font-size: 20px;
+    letter-spacing: 1.5;
+    color: #083E9E;
+}
+
+.right-main-body-content p{
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4A5568;
+}
+
+#form-box{
+    max-width: 450px;
+    padding: 15px;
+    text-align: center;
+}
+
+.input-field{
+    margin-bottom: 20px;
+}
+label{
+    font-size: 15px;
+    color: #4A5568;
+    float: left;
+}
+.input-field input{
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    
+}
+
+.input-field input::placeholder{
+    color: #020F26;
+
+}
+
+.savingAmount-input{
+    position: relative;
+    left: 30px;
+}
+
+.period-input{
+    position: relative;
+    left: 61px;
+}
+
+.interest-input{
+    position: relative;
+    left: 58px;
+}
+
+.input-field input[type="submit"]{
+    background-color: #083E9E;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 10px 10px 10px 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    margin: auto;
+    position: relative;   
+    top: 100px;
+    margin-top: 100px;
+}
+
+.inner-footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-content{
+    width: 700px;
+    margin-left: 10px;
+}
+
+.footer-left-content img{
+    width: 22%;
+}
+
+.footer-left-content p{
+    font-size: 14px;
+    color: #020F26;
+}
+
+.footer-right-content{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link-box{
+    width: 100%;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.footer-link-box h2{
+    font-size: 15px;
+    color: #4A5568;
+}
+
+.footer-link-box li{
+    list-style: none;
+}
+.footer-link-box li a{
+    color: #020F26;
+    font-size: 13px;
+    line-height: 2.5;
+}
+
+.footer-icons img{
+    margin: 5px;
+    width: 25px;
+}
