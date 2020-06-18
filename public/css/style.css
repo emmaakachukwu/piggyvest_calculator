@@ -13,7 +13,6 @@ html,
 }
 main {
   max-width: 1440px;
-  /* height: auto; */
 }
 
 a {
@@ -36,8 +35,6 @@ a {
   top: -5px;
 }
 
-.logo img {
-}
 .inner-header-wrapper {
   width: 90%;
   height: 70px;
@@ -368,25 +365,46 @@ label {
   main {
     max-width: 360px;
     overflow-x: hidden;
-    border: 2px solid black;
+
     margin: 0 auto;
   }
   .header-wrapper {
-    width: 100%;
+    width: 90%;
     overflow-x: hidden;
     height: auto;
+    height: 130px;
   }
-  .inner-header-wrapper .nav-bar {
-    border: 2px solid red;
+  .nav-bar {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     overflow-y: hidden;
-    /* height: 100px; */
   }
-  /* .header-wrapper ul {
-    display:;
-  } */
+  .nav-bar .logo {
+    margin-left: 45px;
+    margin-top: -5px;
+  }
+  .nav-bar .ul {
+    margin-top: -20px;
+  }
+  .ul-links {
+    width: 250px;
+    margin-left: 20px;
+  }
+  .ul-links li a {
+    font-size: 10px;
+    padding-left: 0px;
+  }
+  .ul-links a {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .main-body-container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+  }
   .inner-main-body-container {
     width: 100%;
     display: flex;
@@ -401,7 +419,6 @@ label {
   }
   .inner-main-body-container .Withdraw-btn,
   .deposit-btn {
-    /* width: 20%; */
     padding: 30px;
   }
   .right-main-body-content {
@@ -410,15 +427,13 @@ label {
     overflow-x: hidden;
   }
   form {
-    align-items: center;
-    padding: 0;
-    text-align: center;
+    width: 100%;
   }
   .input-field {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 10px 0 0 50px;
+    margin: 10px 0 0 30px;
   }
   .input-field input {
     width: 70%;
