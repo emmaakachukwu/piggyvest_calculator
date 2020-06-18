@@ -3,12 +3,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piggyvest Calculator</title>
+<<<<<<< HEAD:views/index.ejs
     <link rel="stylesheet" href="/static/css/style.css" />
     <link rel="stylesheet" href="/static/css/responsive-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans"
       rel="stylesheet"
     />
+=======
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans"/>
+>>>>>>> Frontend:index.html
   </head> 
   <body>
     <main>
@@ -31,7 +37,7 @@
       <div class="main-body-container">
         <div class="inner-main-body-container">
           <div class="left-main-body-content">
-            <div class="inner-left-top-main-body-content">
+            <!-- <div class="inner-left-top-main-body-content">
               <div class="inner-left-top-box">
                 <div class="Withdraw-btn">
                   <a href="#">Withdraw</a>
@@ -41,7 +47,7 @@
                 </div>
               </div>
               <div class="left-bottom-circle-btn"></div>
-            </div>
+            </div> -->
             <div class="inner-left-bottom-main-body-content">
               <div class="inner-right-top-box">
                 <h2>Transactions</h2>
@@ -54,6 +60,8 @@
                 <h3>Total:<span id="totalinterest">0</span></h3>
                 <p id="interest"></p>
               </div>
+            <div class="body-image">
+              <img src="img/body.svg" alt="invest">
             </div>
           </div>
           <div class="right-main-body-content">
@@ -82,6 +90,7 @@
                   </div>
                   <div class="col-75">
                     <input type="number" id="period" name="period" placeholder="Period" onkeyup="calculateTotal()">
+                    <input type="number" id="lname" name="lastname" placeholder="Number of Months">
                   </div>
                 </div>
                 <div class="row">
@@ -115,8 +124,7 @@
             <img src="/static/img/logo.png" alt="" />
             <p>
               PiggyVest (formerly piggybank.ng) is the largest online savings &
-              investing platform in Nigeria.
-              <br />For over 4 years, our customers have saved and invested
+              investing platform in Nigeria. For over 4 years, our customers have saved and invested
               billions of Naira that they would normally be tempted to spend.
             </p>
             <p>

@@ -13,6 +13,7 @@ html,
 }
 main {
   max-width: 1440px;
+  /* height: auto; */
 }
 
 a {
