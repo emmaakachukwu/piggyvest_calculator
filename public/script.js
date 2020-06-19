@@ -3,6 +3,7 @@ function calculateTotal() {
   var amount = document.myform.amount.value;
   var r = 10;
   var totalInterest = (r * amount * month) / 100;
+  window.totalInterest = totalInterest;
   var m = parseInt(month);
   var i = parseInt(totalInterest);
   var l = parseInt(amount);
@@ -33,20 +34,20 @@ document.getElementById("btn").onclick = function () {
   totalTotal ? document.getElementById("share").style.display = "block" : document.getElementById("share").style.display = "none";
 };
 
-// document.getElementById("export").onclick = async function () {
-//   let pload = {
-//     amount: document.myform.amount.value,
-//     month: document.myform.period.value,
-//     interest: document.getElementById("totalinterestrate").value
-//   }
+document.getElementById("export").onclick = async function () {
+  let pload = {
+    amount: parseInt(document.myform.amount.value),
+    month: parseInt(document.myform.period.value),
+    interest: window.totalInterest
+  }
 
-//   const res = await fetch('/export', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(pload)
-//   })
+  const res = await fetch('/export', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(pload)
+  })
 
-//   console.log(res.json());
-// }
+  console.log(res.json());
+}

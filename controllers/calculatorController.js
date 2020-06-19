@@ -2,17 +2,16 @@
 const fs = require('fs');
 const pdfk= require('pdfkit')
 //Piggyvest calculator homepage
-// exports.getIndex = (req, res)=> {
-//     res.render("../views/index", {
-//       });
-// };
+exports.getIndex = (req, res)=> {
+    res.render("../views/index", {
+      });
+};
 
 
-getFile = async (req,res,next) => {
-    console.log(req.body); return;
+exports.getFile = async (req,res,next) => {
     const amount=req.body.amount
-    const month=req.body.period
-    const interest=req.body.rate
+    const month=req.body.month
+    const interest=req.body.interest
     console.log(amount ,month)
     const name = 'piggy-' + '.pdf';
     const pdfDoc = new pdfk();
@@ -43,5 +42,3 @@ pdfDoc.end();
 // exports.calculatorSchema_delete = function(req, res) {
 //     res.send("Interest Deleted");
 // };
-
-module.exports = getFile;

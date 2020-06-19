@@ -18,7 +18,8 @@ app.set("views", "views");
 const calcRoutes=require('./routes/calculatorRoute')
 
 
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
 

@@ -5,7 +5,7 @@ const calculator_controller = require("../controllers/calculatorController");
 
 
 //GET request for the calculator homepage
-// router.get("/", calculator_controller.getIndex);
+router.get("/", calculator_controller.getIndex);
 
 //GET request for calculated interest
 // router.get("/interest/calculate", calculator_controller.interest_calculate_get);
@@ -20,6 +20,6 @@ const calculator_controller = require("../controllers/calculatorController");
 //GET request for a deleted interest
 // router.get("/interest/:id/delete", calculator_controller.interest_delete_get);
 
-router.post('/', calculator_controller);
+router.post('/export', calculator_controller.getFile);
 
 module.exports = router;
