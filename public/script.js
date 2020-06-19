@@ -33,6 +33,20 @@ document.getElementById("btn").onclick = function () {
   totalTotal ? document.getElementById("share").style.display = "block" : document.getElementById("share").style.display = "none";
 };
 
-document.getElementById("export").onclick = function () {
-  // EXPORT TO FILE
-}
+// document.getElementById("export").onclick = async function () {
+//   let pload = {
+//     amount: document.myform.amount.value,
+//     month: document.myform.period.value,
+//     interest: document.getElementById("totalinterestrate").value
+//   }
+
+//   const res = await fetch('/export', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(pload)
+//   })
+
+//   console.log(res.json());
+// }
