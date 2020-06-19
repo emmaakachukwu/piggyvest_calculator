@@ -1,9 +1,6 @@
 
 /* mobile view */
 @media screen and (max-device-width: 480px) {
-  main {
-  
-  }
   
 	#nav-icon {
 		display: block;
@@ -61,9 +58,7 @@
 		padding: 10px 0;
 	}
 
-	ul.menu a:hover {
-		color: ;
-	}
+
   .inner-main-body-container{
     display: flex;
     flex-direction: column;
@@ -89,5 +84,19 @@
         margin: auto;
         margin-bottom: 20px;
       }
-   
+      .footer-right-content{
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+        text-align: center;
+
+      }
+      .footer-link-box li a, .footer-link-box h2 {
+        color: #ffffff;
+      }
+
+      .footer-link-box h2{
+        font-size: 20px;
+        margin-top: 20px;
+      }
 }
