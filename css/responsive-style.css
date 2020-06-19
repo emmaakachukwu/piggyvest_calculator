@@ -78,9 +78,5 @@
     width: 100%;
   }
 
-  .inner-footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+  
 }
