@@ -370,3 +370,17 @@ input[type=button] {
   margin: 5px;
   width: 25px;
 }
+
+/* FOR SOCIAL SHARING BUTTONS */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
