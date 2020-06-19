@@ -62,7 +62,7 @@
 	}
 
 	ul.menu a:hover {
-		color: red;
+		color: ;
 	}
   .inner-main-body-container{
     display: flex;
@@ -78,5 +78,16 @@
     width: 100%;
   }
 
-  
+  .inner-footer{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+      .footer-left-content, .footer-right-content{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+   
 }
