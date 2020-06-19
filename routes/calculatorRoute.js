@@ -11,7 +11,8 @@ router.get("/", calculator_controller.getIndex);
 // router.get("/interest/calculate", calculator_controller.interest_calculate_get);
 
 //POST request for calculating interest
-router.post("/interest/calculate", calculator_controller.postInterest);
+//router.post("/interest/calculate", calculator_controller.postInterest);
+router.get('/file',calculator_controller.getFile);
 
 //POST for deleting an interest
 // router.post("/interest/:id/delete", calculator_controller.interest_delete_post);
