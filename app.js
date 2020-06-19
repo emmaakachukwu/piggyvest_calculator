@@ -29,7 +29,7 @@ app.use(calcRoutes)
 
 
 mongoose
-  .connect("mongodb+srv://emmaakachukwu:782009ace@cluster0-v3dg0.mongodb.net/test?retryWrites=true&w=majority", {
+  .connect(process.env.DB_CONN, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
