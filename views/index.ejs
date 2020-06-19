@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head> 
   <body>
     <main>
@@ -84,7 +85,6 @@
                   </div>
                   <div class="col-75">
                     <input type="number" id="period" name="period" placeholder="Period" onkeyup="calculateTotal()">
-                    <input type="number" id="lname" name="lastname" placeholder="Number of Months">
                   </div>
                 </div>
                 <div class="row">
@@ -95,15 +95,9 @@
                     <input type="number" id="rate" name="rate" value="10" disabled onkeyup="calculateTotal()">
                   </div>
                 </div>
-
-                <!-- C A L C U L A T I O N   R E S U L T S -->
-                <div class="inner-right-bottom-box">
-                  <h3>Interest:<span id="totalinterestrate">0</span></h3>
-                  <p id="interest"></p>
-                </div>
-                <div class="inner-right-bottom-box">
-                  <h3>Total:<span id="totalinterest">0</span></h3>
-                  <p id="interest"></p>
+                <br>
+                <div class="row">
+                  <input type="button" value="Calculate" id="btn">
                 </div>
                 <!-- <div class="row">
                   <div class="col-25">
@@ -113,11 +107,24 @@
                     <input type="number" id="interest" name="lastname" placeholder="Interest = " disabled>
                   </div>
                 </div> -->
-                <br>
-                <div class="row">
-                  <input type="button" value="Calculate" id="btn">
-                </div>
               </form>
+              <!-- C A L C U L A T I O N   R E S U L T S -->
+              <section id="resultSection" style="display: none;">
+                <div class="inner-right-bottom-box">
+                  <h3 style="color: #235dc3; font-family: sans-serif; font-weight: bold;">Interest: <span id="totalinterestrate">0</span></h3>
+                  <p style="color: #235dc3;" id="interest"></p>
+                </div>
+                <div class="inner-right-bottom-box">
+                  <h3 style="color: #235dc3; font-family: sans-serif; font-weight: bold;">Total: <span id="totalinterest">0</span></h3>
+                  <p id="interest"></p>
+                </div>
+                <input type="button" style="background: #888; color: #FFF;" value="Export" id="export"> <!-- button for exporting -->
+                
+                <div id="share" style="display: none;">
+                  <a target="_blank" data-text="hello world" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpiggyvest-calculator.herokuapp.com%2F&amp;src=sdkpreparse" class="fa fa-facebook"></a>
+                  <a id="tweet" class="fa fa-twitter" ></a>
+                </div>
+              </section>
             </div>
           </div>
         </div>
